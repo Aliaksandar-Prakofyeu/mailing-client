@@ -26,7 +26,7 @@ const App = () => {
                     {snack}
                 </Alert>
             </Snackbar>
-            <NavBar name={name} setName={setName}/>
+            <NavBar name={name}/>
             <AuthModal name={name} setName={setName}/>
             <Stack flex={1} overflow="auto" direction="column" spacing={2}>
                 <NewMessage/>
