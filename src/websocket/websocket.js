@@ -74,7 +74,7 @@ const sortMessagesByDate = (messages) => {
 }
 
 export const connect = async (name, setOpen, setLoading, setError) => {
-    client = new WebSocket('ws://mailing-server-production.up.railway.app/websocket')
+    client = new WebSocket('wss://mailing-server-production.up.railway.app/websocket')
 
     client.onopen = () => {
         client.send(
