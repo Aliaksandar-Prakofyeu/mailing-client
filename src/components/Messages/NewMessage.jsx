@@ -10,11 +10,7 @@ const NewMessage = () => {
     const [body, setBody] = useState('')
 
     const handleReceiverChange = (event, value) => {
-        if (typeof value === 'number') {
-            setReceiver(users[value])
-        } else {
-            setReceiver(value)
-        }
+        setReceiver(value)
     }
 
     const handleTitleChange = (e) =>{
